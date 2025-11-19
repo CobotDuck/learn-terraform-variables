@@ -6,6 +6,7 @@ terraform {
       name = "tf-vault-qa-tapan"
     }
   }
+  
   */
   required_providers {
     aws = {
