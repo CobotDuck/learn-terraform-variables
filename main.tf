@@ -1,15 +1,19 @@
 terraform {
+  /*
   cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "tf-vault-qa-tapan"
     }
   }
+  */
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
+      version = "~> 3.28.0"
     }
   }
+  required_version = ">= 0.14.0"
 }
 
 provider "aws" {
